@@ -5,9 +5,10 @@ import styled from 'styled-components'
 function Header() {
   return (
     <Nav className="Header">
-      <Logo src="https://static.turbosquid.com/Preview/2015/08/30__04_27_51/1.jpgfc4f1c77-9f9e-4bd8-a7dc-ded81c2505fbOriginal.jpg" />
+      <Logo src="/images/head.png" />
 
       <NavMenu>
+        <h1>Jay Winebrenner Video</h1>
         <a>
           <img src="/images/home-icon.svg" />
           <span>HOME</span>
@@ -42,7 +43,8 @@ export default Header;
 
 const Nav = styled.nav`
 height: 70px;
-background-color: #3B6190;
+// background-color: #3B6190;
+background-color: black;
 display:flex;
 align-items: center;
 padding: 0 30px;
@@ -58,6 +60,9 @@ const NavMenu = styled.div`
   flex: 1;
   margin-left: 25px;
   align-items: center;
+  h1 {
+    margin-right: 20px;
+  }
   a {
       display:flex;
       align-items: center;
@@ -86,6 +91,7 @@ const NavMenu = styled.div`
           transform: scaleX(0);
         }
       }
+      
       &:hover {
         span:after {
           transform: scaleX(1);
