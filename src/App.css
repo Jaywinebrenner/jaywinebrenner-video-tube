@@ -1,3 +1,28 @@
 * {
   box-sizing: border-box;
 }
+
+.video-image {
+  transition: all 250ms cubic-bezier(.25, .46, .45, .95) 0s;
+  box-shadow: rgb(0 0 0 / 76%) 0px 36px 40px -10px, 
+  rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+}
+
+.video-image:hover {
+  transform: scale(1.01);
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}

@@ -18,25 +18,25 @@ function ImgSlider() {
   return (
       <Carousel {...settings}>
           <Wrap>
-              <img src="/images/1.jpg"/>
+              <img src="/images/1.jpg" alt="movie"/>
           </Wrap> 
           <Wrap>
-              <img src="/images/2.jpg"/>
+              <img src="/images/2.jpg" alt="movie"/>
           </Wrap> 
           <Wrap>
-              <img src="/images/3.jpg"/>
+              <img src="/images/3.jpg" alt="movie"/>
           </Wrap> 
           <Wrap>
-              <img src="/images/4.jpg"/>
+              <img src="/images/4.jpg" alt="movie"/>
           </Wrap> 
           <Wrap>
-              <img src="/images/5.jpg"/>
+              <img src="/images/5.jpg" alt="movie"/>
           </Wrap> 
           <Wrap>
-              <img src="/images/6.jpg"/>
+              <img src="/images/6.jpg" alt="movie"/>
           </Wrap> 
           <Wrap>
-              <img src="/images/7.jpg"/>
+              <img src="/images/7.jpg" alt="movie"/>
           </Wrap> 
       </Carousel>
     
