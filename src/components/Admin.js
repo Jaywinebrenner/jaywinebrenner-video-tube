@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
-
+// import { auth, signInWithEmailAndPassword, signInWithGoogle } from "firebase";
 
 
 
@@ -51,6 +51,12 @@ function Admin() {
         }))
     }
 
+
+    const signIn = () => {
+
+    }
+  
+
     // const handleSubmitClick = (e) => {
     //     e.preventDefault();
     //     if(state.password === state.confirmPassword) {
@@ -90,7 +96,7 @@ function Admin() {
 
                 <LogginButton 
                     type="submit" 
-                    onClick={setIsLoggedIn}
+                    onClick={signIn(state.email, state.password)}
           >
                     Loggin
                 </LogginButton>

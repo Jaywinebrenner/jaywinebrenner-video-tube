@@ -1,14 +1,16 @@
 
 import firebase from 'firebase/app';
 import 'firebase/firestore';
+import 'firebase/auth'
+
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBhzGkBMq17xhDdmsEfkQWxROgu1eHKjG0",
-    authDomain: "jaywinebrenner-video-tube.firebaseapp.com",
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
     projectId: "jaywinebrenner-video-tube",
     storageBucket: "jaywinebrenner-video-tube.appspot.com",
-    messagingSenderId: "87550752968",
-    appId: "1:87550752968:web:74d220aa17913246f48dfd"
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_APP_ID
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
