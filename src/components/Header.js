@@ -22,7 +22,7 @@ function Header() {
       {/* <Logo src="/images/head.png" /> */}
 
       <NavMenu>
-        <h1>Jay Winebrenner Video</h1>
+        <h1>Jay Winebrenner Video Production</h1>
  
           <img className="link-icon" src="/images/home-icon.svg" />
           <Link style={linkStyle} to="/"><span>HOME</span></Link>
