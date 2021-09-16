@@ -1,22 +1,24 @@
 import React from 'react';
 import styled from 'styled-components'
-// import videoData from '../constants/videoData';
+import {Link} from 'react-router-dom'
 
 
 function Videos({allVideos}) {
 
- 
 
   return (
     <Container>
         <h2>Videos</h2>
+
         <Wrap>
      
             {allVideos && allVideos.map((video) => (
-       
-  
+    
             <Content key={video.id}>
-                <img className="video-image" src={video.thumbnail_url} />
+                {/* <a href={`/detail/${video.id}`}>
+                    <img className="video-image" src={video.thumbnail_url} />
+                </a> */}
+                <Link to={`/detail/${video.id}`}><img className="video-image" src={video.thumbnail_url} /></Link>
                 <p>{video.name}</p>
             </Content>
 

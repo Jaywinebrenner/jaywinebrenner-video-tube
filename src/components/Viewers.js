@@ -7,12 +7,15 @@ function Viewers() {
       <Container>
             <Wrap>
                 <img src="/images/viewers-disney.png" />
+                Director Reel
             </Wrap>
             <Wrap>
                 <img src="/images/viewers-marvel.png" />
+                Shorts / Commercials
             </Wrap>
             <Wrap>
                 <img src="/images/viewers-national.png" />
+                Music Videos
             </Wrap>
             <Wrap>
                 <img src="/images/viewers-starwars.png" />

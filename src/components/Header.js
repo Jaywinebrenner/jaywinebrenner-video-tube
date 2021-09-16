@@ -1,19 +1,33 @@
 import React from 'react';
 import styled from 'styled-components'
+import {
+  Link
+} from "react-router-dom";
 
 
 function Header() {
+  const linkStyle = {
+    textDecoration: "none",
+    color: 'white',
+    padding: 0,
+    fontSize: '13px',
+    letterSpacing: '1.42px',
+    position: 'relative',
+    marginRight: '20px'
+  };
+
+
   return (
     <Nav className="Header">
-      <Logo src="/images/head.png" />
+      {/* <Logo src="/images/head.png" /> */}
 
       <NavMenu>
         <h1>Jay Winebrenner Video</h1>
-        <a>
-          <img src="/images/home-icon.svg" />
-          <span>HOME</span>
-        </a>
-        <a>
+ 
+          <img className="link-icon" src="/images/home-icon.svg" />
+          <Link style={linkStyle} to="/"><span>HOME</span></Link>
+  
+        {/* <a>
           <img src="/images/search-icon.svg" />
           <span>SEARCH</span>
         </a>
@@ -24,14 +38,15 @@ function Header() {
         <a>
           <img src="/images/movie-icon.svg" />
           <span>SHORTS</span>
-        </a>
-        <a>
-          <img src="/images/watchlist-icon.svg" />
-          <span>CONTACT</span>
-        </a>
+        </a> */}
+    
+          <img className="link-icon" src="/images/watchlist-icon.svg" />
+          <Link style={linkStyle} to="/contact"><span>CONTACT</span></Link>
+      
       </NavMenu>
+      <a href="/admin">
       <UserImg src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ZqtH_FflCcwXc7p6H-15NAf8hfAvK9A0-g&usqp=CAU"/>
-
+        </a>
     
 
 
@@ -60,6 +75,7 @@ const NavMenu = styled.div`
   flex: 1;
   margin-left: 25px;
   align-items: center;
+  
   h1 {
     margin-right: 20px;
   }
@@ -71,6 +87,7 @@ const NavMenu = styled.div`
 
       img {
         height: 20px;
+        margin-right: 20px;
       }
 
       span {
