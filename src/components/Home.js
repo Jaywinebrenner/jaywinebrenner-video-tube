@@ -69,6 +69,9 @@ function Home({allVideos}) {
 export default Home;
 
 const Container = styled.main`
+@media only screen and (max-width: 600px) {
+  width: 100%;
+}
     min-height: calc(100vh - 70px);
     padding: - calc(3.5vw + 5px);
     position: relative;

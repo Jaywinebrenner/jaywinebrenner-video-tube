@@ -51,6 +51,7 @@ const Content = styled.div`
             transform: scale(1.02);
         }
     }
+
 `
 
 const Wrap = styled.div`
@@ -59,6 +60,9 @@ const Wrap = styled.div`
     grid-gap: 25px;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     padding: 20px;
+    @media only screen and (max-width: 600px) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+      }
 
 `
 

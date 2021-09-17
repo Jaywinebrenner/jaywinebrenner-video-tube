@@ -23,4 +23,9 @@ width: 50%;
 height: calc(100vh -70px);
 padding: 10px;
 text-align: center;
+@media only screen and (max-width: 600px) {
+ h1 {
+   font-size: 18px;
+ }
+}
 `
